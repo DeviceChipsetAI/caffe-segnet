@@ -30,6 +30,13 @@ void caffe_axpy(const int N, const Dtype alpha, const Dtype* X,
     Dtype* Y);
 
 template <typename Dtype>
+void caffe_sqrt(const int N, const Dtype* a, Dtype* y);
+
+
+template <typename Dtype>
+void caffe_gpu_sqrt(const int n, const Dtype* a, Dtype* y);
+
+template <typename Dtype>
 void caffe_cpu_axpby(const int N, const Dtype alpha, const Dtype* X,
     const Dtype beta, Dtype* Y);
 
